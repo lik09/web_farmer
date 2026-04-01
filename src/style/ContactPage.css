@@ -1,0 +1,98 @@
+.seection-contact {
+  max-width: 1400px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  border-left: 8px solid #174143;
+
+}
+
+.box-contact {
+  /* border-left: 8px solid #174143; */
+  position: relative;
+  padding: 20px 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.detail-customer {
+ border-left: 2px solid #70B2B2;
+  padding: 20px 40px;
+  min-height: 300px;
+  position: relative;
+}
+
+.box-contact-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.dis-customer {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.btn-wrapper {
+  margin-bottom: 20px;
+}
+
+/* logo inside the box */
+.style-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 40%;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.style-logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+
+/*  */
+.detail-customer .customer-avatar {
+    border-radius: 50%;
+    background-color: #174143;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.detail-customer .customer-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* buttton pre and next */
+.button-pre ,.button-next{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-pre img ,.button-next img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}

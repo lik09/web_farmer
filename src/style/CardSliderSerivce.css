@@ -1,0 +1,77 @@
+
+.box-card-serivce {
+    height: 350px;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease; /* move transition here */
+}
+
+
+.pic-card{
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    background-color: #016B61;
+}
+
+.pic-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition: all 0.3s ease-in;
+}
+.pic-card img:hover  {
+    transform: scale(1.1);
+}
+
+.content-card{
+    padding:14px 20px;
+    /* background-color: blueviolet; */
+}
+
+.content-card h1{
+    line-height:1.3;
+    font-weight: bold;
+    padding-bottom:5px;
+    transition: all 0.3s;
+    color: #174143;
+}
+
+.content-card h2{
+    line-height:1.5;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: #174143;
+}
+
+.content-card p {
+    line-height: 1.3;
+    display: -webkit-box;           /* for multiline ellipsis */
+    -webkit-line-clamp: 3;          /* limit to 3 lines */
+    -webkit-box-orient: vertical;   /* required for -webkit-line-clamp */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 3px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.content-card h1:hover , .content-card p:hover{
+    color: #016B61;
+}
+
+
+.button-detail-card{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:#174143;
+    color:#FFFFFF;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 👈 add shadow */
+    cursor: pointer; /* optional: show pointer on hover */
+}
+
+.button-detail-card:hover{
+    background-color:#016B61;
+}

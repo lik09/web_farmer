@@ -1,0 +1,12 @@
+
+.seection-service{
+    max-width: 1400px;
+    width: 100%;
+    /* height: 700px; */
+    position: relative; /* ✅ IMPORTANT */
+    margin: 0 auto;     /* center */
+    /* width: 1400px; */
+    /* background-color: burlywood; */
+    box-sizing: border-box;
+}
+

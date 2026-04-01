@@ -1,0 +1,68 @@
+.contianer-navbar {
+  width: 100%;
+  background-color: rgba(227, 234, 236, 0.841);
+  position: relative;
+  height: 100px;
+}
+
+/* Main navbar flix top */
+.main-navbar {
+  position: fixed;  /* always on top */
+  top: 0;           /* flix top:0 */
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  background-color: rgba(227, 234, 236, 0.841);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Menu styles */
+.menu-item {
+  width: 100%;
+  background: transparent !important;
+  border-bottom: none !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.menu-item .ant-menu-item {
+  color: #000 !important;
+  font-weight: 600;
+  transition: all 0.3s;
+ 
+}
+
+.menu-item .ant-menu-item:hover {
+  color: #174143 !important;
+  background: transparent !important;
+}
+.menu-item .ant-menu-item a{
+  padding: 4px 16px;
+}
+
+.menu-item .ant-menu-item a:hover:not(.ant-menu-item-selected a) {
+  color: #174143 !important;
+  background-color: rgba(23, 65, 67, 0.3) !important;
+}
+
+.menu-item .ant-menu-item-selected a {
+  color: #ffffff !important;
+  background-color: #174143 !important;
+  font-weight: 600;
+  
+}
+
+.menu-item .ant-menu-item::after {
+  border-bottom: none !important;
+  padding: 4px 16px;
+}
+
+/*  */
