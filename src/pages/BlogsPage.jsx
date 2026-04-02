@@ -6,6 +6,7 @@ import CardSliderBlog from "../components/ui/CardSliderBlog";
 function BlogsPage() {
   return (
     <Flex
+      id="blog"
       justify="center"
       align="center"
       style={{

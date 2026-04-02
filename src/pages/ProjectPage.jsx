@@ -13,7 +13,7 @@ function ProjectPage() {
   const lang = i18n.language;
 
   return (
-    <Flex vertical justify='center' align='center' style={{ width:'100%',padding:"40px 0px" ,backgroundColor:"#FFFFFF" }}>
+    <Flex id='project' vertical justify='center' align='center' style={{ width:'100%',padding:"40px 0px" ,backgroundColor:"#FFFFFF" }}>
       <Flex vertical justify='center' align='center' className='seection-service'>
         <h1 style={{ fontSize:14,fontWeight:'bold' }}>{t("our_product")}</h1>
         <h1 style={{ fontSize:28,fontWeight:600 ,textAlign:'center',padding:30 }}>

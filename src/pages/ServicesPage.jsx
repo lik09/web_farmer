@@ -25,7 +25,7 @@ function ServicesPage() {
     const lang = i18n.language;
 
   return (
-    <Flex justify='center' align='center' style={{ width:'100%',padding:"40px 0px" ,backgroundColor: "rgba(126, 153, 163, 0.1)"}}>
+    <Flex id='service' justify='center' align='center' style={{ width:'100%',padding:"40px 0px" ,backgroundColor: "rgba(126, 153, 163, 0.1)"}}>
         <Flex vertical justify='space-between' className='seection-service'>
             <div style={{ padding:"20px 40px" }}>
                <h1 style={{fontSize:14 ,fontWeight:'bold',padding:"10px 0px" }}>{t("what_we_do")}</h1>

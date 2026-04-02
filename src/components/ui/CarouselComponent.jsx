@@ -88,7 +88,7 @@ function CarouselComponent() {
   const handleNext = () => carouselRef.current.next();
 
   return (
-    <div style={{ position: "relative" }}>
+    <div id='home' style={{ position: "relative" }}>
       <Carousel
         ref={carouselRef}
         autoplay

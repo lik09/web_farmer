@@ -32,7 +32,7 @@ function AboutPage() {
     const lang = i18n.language;
 
   return (
-    <Flex justify='center' align='center' style={{
+    <Flex id='about' justify='center' align='center' style={{
         width:'100%',
         height:600 ,
         // backgroundColor:'red',

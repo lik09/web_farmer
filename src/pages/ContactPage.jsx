@@ -49,6 +49,7 @@ function ContactPage() {
   return (
     <>
       <Flex
+        id='contact'
         vertical
         justify='center'
         align='center'
