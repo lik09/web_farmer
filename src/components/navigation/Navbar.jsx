@@ -40,7 +40,7 @@ const Navbar = () => {
     }
   };
 
-  // dark mode
+  //dark mode
   const toggleDarkMode = (checked) => {
     setDarkMode(checked);
     document.documentElement.classList.toggle("dark", checked);
