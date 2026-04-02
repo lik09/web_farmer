@@ -8,7 +8,6 @@ import iconPre from "../assets/icons/back.png";
 import iconNext from "../assets/icons/forward.png";
 import AutoSlider from '../components/ui/AutoSlider';
 
-
 const contactData = [
   {
     id: 1,
@@ -45,7 +44,6 @@ conceit pardon or sir admirers thereof.`,
     ]
   }
 ];
-
 
 function ContactPage() {
   return (
