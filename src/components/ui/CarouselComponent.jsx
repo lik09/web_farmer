@@ -101,6 +101,7 @@ function CarouselComponent() {
             <div style={{ position: "relative", height: `${carouselHeight}px` }}>
               {/* Image */}
               <img
+                loading="lazy"
                 src={slide.img}
                 alt={`slide-${index}`}
                 style={{
