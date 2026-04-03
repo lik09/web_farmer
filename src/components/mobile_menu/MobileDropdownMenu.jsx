@@ -57,7 +57,9 @@ const MobileDropdownMenu = ({
       {/* Dark mode switch */}
       <Flex gap={10} style={{padding:'6px 0px'}}>
         <span>Dark Mode</span>
-        <Switch checked={darkMode} onChange={toggleDarkMode} />
+        <Switch checked={darkMode} onChange={toggleDarkMode} style={{
+            backgroundColor: darkMode ? "#174143" : undefined, // active color
+          }}/>
       </Flex>
     </div>
   );
