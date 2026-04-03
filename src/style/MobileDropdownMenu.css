@@ -1,0 +1,86 @@
+/* Button wrapper */
+.mobile-menu-btn-wrapper {
+  background-color: #174143;
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Hamburger animation */
+.hamburger {
+  width: 20px;
+  height: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Dropdown content */
+.mobile-dropdown-content {
+  width: 220px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 20px !important;
+}
+
+/* Divider */
+.menu-divider {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Custom div-based menu items */
+.custom-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.custom-menu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.custom-menu-item:hover {
+  background-color: rgba(23, 65, 67, 0.3);
+  color: #174143; /* hover text color */
+}
+
+.custom-menu-item.active {
+  background-color: #174143; /* active bg */
+  color: #fff; /* active text color */
+}
+
+/* Language buttons */
+.menu-lang {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Dark mode */
