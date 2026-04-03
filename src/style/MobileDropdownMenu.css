@@ -83,4 +83,27 @@
   margin-bottom: 8px;
 }
 
-/* Dark mode */
+@media (max-width: 768px) {
+  .mobile-menu-btn-wrapper{
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .hamburger {
+    width: 18px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+   .hamburger span {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    }
+
+}

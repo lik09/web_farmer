@@ -17,7 +17,7 @@
 
 /* expand width when active */
 .search-wrapper.active {
-  width: 400px; /* your desired width */
+  width: 200px; /* your desired width */
   opacity: 1;
 }
 
@@ -52,25 +52,8 @@
 }
 
 
-@media (max-width: 1165px) {
-  .search-wrapper.active {
-    width: 200px;
-    opacity: 1;
-  }
-}
 
 
-@media (max-width:685px){
-  .search-wrapper.active {
-    width: 200px; 
-    opacity: 1;
-  }
-  .menu-bar-1 img  ,.menu-bar-2 img{
-    height: 40px; 
-    width: auto;
-    z-index: 10;
-  }
 
- 
-}
+
 

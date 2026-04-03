@@ -3,16 +3,20 @@
   background-color: rgba(227, 234, 236, 0.841);
   position: relative;
   height: 100px;
+  box-sizing: border-box !important;
+  padding: 2px;
+  
 }
 
 /* Main navbar flix top */
 .main-navbar {
   position: fixed;  /* always on top */
   top: 0;           /* flix top:0 */
-  left: 0;
-  right: 0;
   z-index: 9999;
+  left: 50%;                /* ✅ center trick */
+  transform: translateX(-50%); /* ✅ center */
   max-width: 1400px;
+ 
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -22,11 +26,14 @@
   background-color: rgba(227, 234, 236, 0.841);
   border-radius: 6px;
   transition: all 0.3s ease;
+  padding: 0px 10px;
+  
 }
 
 /* Menu styles */
 /* menu container */
 .menu-item {
+  width: 90% !important;
   background: transparent !important;
   border-bottom: none !important;
   padding: 0px;
@@ -37,14 +44,15 @@
 .menu-item .ant-menu-item {
   height: 30px !important;
   line-height: 30px !important;
-  display: flex;
+
   align-items: center;
 
 }
 
 /* clickable label */
 .menu-label {
-  padding: 0px 16px;
+  
+  padding: 0px 12px;
   font-weight: 600;
   color: #000;
   transition: all 0.3s ease;
@@ -79,14 +87,39 @@
   margin-top: 12px !important;
 }
 
-
-
 .ant-menu-item:hover {
   background: transparent !important;
 }
 .mobile-dropdown-menu-items {
   width: 200px !important; 
- 
   padding: 10px !important;
 }
 
+@media (max-width: 1165px) {
+  .main-navbar .hide-responsive{
+    display: none !important;
+  }
+  .menu-item{
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1024px){
+  
+   .mobile-menu {
+    display: flex;
+  }
+  .btn-search{
+    display: none !important;
+  }
+}
+
+@media (max-width: 860px){
+  .cart-box{
+    display: none !important;
+  }
+  .menu-item {
+    padding-left:10px;
+  }
+  
+}

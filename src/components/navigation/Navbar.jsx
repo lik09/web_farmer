@@ -119,20 +119,26 @@ const Navbar = () => {
                   </div>
                 ),
               }))}
-              style={{ flex: 1, justifyContent: "start", marginLeft: 80 }}
+              style={{  display:'flex',justifyContent: "start" ,paddingLeft:40 }}
               className="menu-item"
             />
 
-            <div style={{ display: "flex", gap: 10, alignItems: "center", marginRight: 10 }}>
-              <AnimatedSearchButton />
-
-              <Avatar style={{ backgroundColor: "#F2B50B", boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }}>
+            <div style={{ display: "flex", gap: 10, alignItems: "center"}}>
+              <div className="btn-search">
+                <AnimatedSearchButton />
+              </div>
+             
+              <Avatar className="cart-box" style={{ backgroundColor: "#F2B50B", paddingTop:6 , boxShadow: "0 4px 8px rgba(0,0,0,0.2)" ,marginLeft:5}}>
                 <GiShoppingCart size={20} />
               </Avatar>
-
-              <Button size="small" onClick={() => changeLanguage("en")}>EN</Button>
-              <Button size="small" onClick={() => changeLanguage("km")}>KM</Button>
-              <Switch checked={darkMode} onChange={toggleDarkMode} />
+              
+              <Flex gap={10} className="hide-responsive">
+                <Button size="small" onClick={() => changeLanguage("en")}>EN</Button>
+                <Button size="small" onClick={() => changeLanguage("km")}>KM</Button>
+                <Switch checked={darkMode} onChange={toggleDarkMode} style={{
+                    backgroundColor: darkMode ? "#174143" : undefined, // active color
+                  }}/>
+              </Flex>
             </div>
           </>
         ) : (
@@ -152,12 +158,17 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="logo"
-                style={{ height: 64, cursor: "pointer" }}
+                style={{ height: 42,cursor: "pointer",marginTop:8 }}
                 onClick={() => scrollToSection("home")}
               />
             </div>
 
-            <AnimatedSearchButton />
+            <Flex gap={8}>
+              <AnimatedSearchButton />
+              <Avatar style={{ backgroundColor: "#F2B50B", paddingTop:6 , boxShadow: "0 4px 8px rgba(0,0,0,0.2)" }}>
+                  <GiShoppingCart size={20} />
+              </Avatar>
+            </Flex>
             
           </Flex>
         )}

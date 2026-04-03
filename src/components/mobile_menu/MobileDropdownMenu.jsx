@@ -68,7 +68,7 @@ const MobileDropdownMenu = ({
       onOpenChange={setOpen}
       trigger={["click"]}
       placement="bottomRight"
-      dropdownRender={() => menu}
+      popupRender={() => menu} 
     >
       <Flex className="mobile-menu-btn-wrapper" justify="center" align="center">
         <Button

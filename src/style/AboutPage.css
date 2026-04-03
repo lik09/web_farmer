@@ -22,7 +22,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-   
+    border-left: 8px solid #174143;
 }
 
 .box-about h3{
