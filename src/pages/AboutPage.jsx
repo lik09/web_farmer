@@ -34,7 +34,7 @@ function AboutPage() {
   return (
     <Flex id='about' justify='center' align='center' style={{
         width:'100%',
-        height:600 ,
+        padding: "60px 20px",
         // backgroundColor:'red',
         
        
@@ -44,7 +44,7 @@ function AboutPage() {
             
             <h1 style={{ fontSize:14,fontWeight:'bold' ,padding:'20px 0px' }}>{t("who_we_are")}</h1>
             <h3>{lang === "km" ? aboutData.title_kh : aboutData.title}</h3>
-            <p className='dis-about' style={{ lineHeight:1.5 ,fontSize:16 }}>
+            <p className='dis-about'>
                 {lang === "km" ? aboutData.description_kh : aboutData.description}
             </p>
             

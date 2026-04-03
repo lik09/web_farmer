@@ -131,7 +131,7 @@ function CarouselComponent() {
                 </h1>
                 
                 <div style={{margin:'25px 0px'}}>
-                  <ButtonComponent text='Discover More' onClick={()=>{}} />
+                  <ButtonComponent text={t('discover_more')} onClick={()=>{}} />
                 </div>  
 
               </div>
