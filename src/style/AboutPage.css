@@ -14,7 +14,6 @@
 .box-about{
     width: 85%;
     min-height:  370px;
-    /* border-left: 8px solid #174143; */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: relative;
     padding-left: 40px;

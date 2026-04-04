@@ -17,7 +17,10 @@ i18n.use(initReactI18next).init({
         explore_more:"Explore More",
         what_we_do:"WHAT WE DO",
         view_all:"View All",
-        our_product:"Our Product"
+        our_product:"Our Product",
+        testimonials:"Testimonials",
+        customer :"Customer",
+        hear_what_our_customer_are_saying:"Hear What Our Customers Are Saying",
       },
     },
     km: {
@@ -34,8 +37,10 @@ i18n.use(initReactI18next).init({
         explore_more:"ស្វែងយល់បន្ថែម",
         what_we_do:"អ្វីដែលយើងធ្វើ",
         view_all:"មើលទាំងអស់",
-        our_product:"ផលិតផលរបស់យើង"
-      
+        our_product:"ផលិតផលរបស់យើង",
+        testimonials:"មតិពីអតិថិជន",
+        customer :"អតិថិជន",
+        hear_what_our_customer_are_saying:"ស្តាប់អ្វីដែលអតិថិជនរបស់យើងនិយាយ",
       },
     },
   },
