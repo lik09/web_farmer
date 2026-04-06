@@ -19,7 +19,7 @@ function ProjectPage() {
         <h1 style={{ fontSize:28,fontWeight:600 ,textAlign:'center',padding:30 }}>
           {lang === "km" ? projectData.title_kh : projectData.title}
         </h1>
-        <div style={{ width: '100%',margin:0 ,padding:"0px 40px" }}>
+        <div style={{ width: '100%',margin:0 ,padding:"10px 40px", }}>
           <CardSliderProject />
         </div>
       </Flex>

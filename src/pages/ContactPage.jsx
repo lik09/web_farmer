@@ -74,14 +74,14 @@ function ContactPage() {
         id='contact'
         vertical
         align='center'
-        style={{ width:'100%', padding:"80px 0", backgroundColor: "rgba(126, 153, 163, 0.1)" }}
+        style={{ width:'100%', padding:"80px 20px", backgroundColor: "rgba(126, 153, 163, 0.1)" }}
       >
         <Flex className='seection-contact'>
           <Row gutter={[10, 10]}>
             
             {/* LEFT */}
             <Col xs={24} md={8} lg={6}>
-              <div className='box-contact'>
+              <div className='box-contact' >
                 <h3 className='box-contact-title'>{t('testimonials')}</h3>
                 <h1>{t('hear_what_our_customer_are_saying')}</h1>
                
@@ -93,10 +93,10 @@ function ContactPage() {
 
             {/* CENTER */}
             <Col xs={24} md={14} lg={16}>
-              <div className="carousel-wrapper">
-                <Carousel ref={carouselRef} dots={false}>
+              <div className="carousel-wrapper" >
+                <Carousel ref={carouselRef} dots={false} >
                   {contactData.map((item) => (
-                    <div key={item.id}>
+                    <div key={item.id}  className="carousel-slide-item">
                       <Flex vertical className='detail-slide'>
                         <p className='dis-customer'>{lang === "km" ? item.description_kh : item.description}</p>
                         <h1>{lang === "km" ? item.customer_name_kh : item.customer_name}</h1>
@@ -140,9 +140,9 @@ function ContactPage() {
 
       {/* Gallery */}
       <Flex vertical align='center' style={{ padding:"60px 0" }}>
-        <h3>OUR GALLERY</h3>
+        <h3>{t('our_gallery')}</h3>
         <h1 style={{ textAlign:'center' }}>
-          Life on the Farm Our <br />Gallery
+          {t('life_on_the_farm_our_gallery')}
         </h1>
         <AutoSlider />
       </Flex>

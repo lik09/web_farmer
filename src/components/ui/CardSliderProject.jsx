@@ -122,18 +122,17 @@ export default function CardSliderProject() {
               className="card-box"
             >
               {/* image */}
-              <div className="card-img">
+              <div className="card-img" >
                 <img src={item.image} alt={item.title} />
               </div>
               <h1 className="card-title">{lang === "km" ? item.title_kh : item.title}</h1>
-              <Rate defaultValue={4} />
-              <Flex align="center" gap={20} style={{padding:10}}>
+              <Rate defaultValue={4} style={{padding:0 ,margin:0}}/>
+              <Flex align="center" gap={20} style={{padding:0}}>
                 <p className="old-price">${item.sale_price}</p>
                 <span className="new-price">${item.price_after_discount}</span>
               </Flex>
 
               <Flex vertical justify="flex-end" align="center" className="effect-over" >
-                
                 <Avatar
                     size={50}
                     style={{

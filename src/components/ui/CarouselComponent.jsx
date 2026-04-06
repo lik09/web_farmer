@@ -126,7 +126,7 @@ function CarouselComponent() {
                 <div style={{ marginBottom:25 ,fontSize:12 }}>
                   <h1>{t("original_and_natural")}</h1>
                 </div>
-                <h1 style={{ fontSize: "60px", marginBottom: "16px" ,fontWeight:"bold" ,lineHeight: 1.2}}>
+                <h1 className="title-side" style={{ fontSize: "60px", marginBottom: "16px" ,fontWeight:"bold" ,lineHeight: 1.2}}>
                   {currentLang === "km" ? slide.title_kh : slide.title}
                 </h1>
                 

@@ -5,10 +5,22 @@ import "../../style/FooterComponent.css";
 import { LiaFacebookF } from "react-icons/lia";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
+const footerData = {
+  description: "Web Farmer is dedicated to supporting sustainable agriculture by offering fresh, organic produce directly from local farms. We connect farmers with consumers, ensuring fair prices and high-quality products while promoting healthy eating and environmental stewardship.",
+  description_kh: "វេបហ្វាមឺរ ត្រូវបានបង្កើតឡើងដើម្បីគាំទ្រដល់វិស័យកសិកម្មប្រកបដោយចីរភាព ដោយផ្តល់ជូននូវផលិតផលសរីរាង្គស្រស់ៗដោយផ្ទាល់ពីកសិដ្ឋានក្នុងស្រុក។ យើងភ្ជាប់កសិករទៅកាន់អ្នកប្រើប្រាស់ ធានាតម្លៃសមរម្យ និងផលិតផលគុណភាពខ្ពស់ ខណៈពេលដែលលើកកម្ពស់ការបរិភោគអាហារដែលមានសុខភាពល្អ និងការថែរក្សាបរិស្ថាន។"
+};
+
+const addressData = {
+  address: "National Road No. 3, Makbrang Commune Tuek Chhou District, Kampot Province",
+  address_kh: "ផ្លូវជាតិលេខ ៣ ឃុំមែកប្រាំង ស្រុកទឹកឈូ ខេត្តកំពត"
+};
 
 function FooterComponent() {
   const [email, setEmail] = useState("");
+  const {t ,i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   const handleSubscribe = () => {
     console.log("Subscribed with:", email);
@@ -31,9 +43,7 @@ function FooterComponent() {
           <Flex className="footer-info" vertical style={{ backgroundColor: "transparent" }}>
             <img src={logo} alt="logo.png" style={{ height: 64, width: 170 ,objectFit:'cover'}} />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              tristique consequat placerat. Vestibulum auctor pellentesque sem,
-              eu posuere erat hendrerit quis.
+              {currentLang === "km" ? footerData.description_kh : footerData.description}
             </p>
 
             <Flex
@@ -46,13 +56,13 @@ function FooterComponent() {
               }}
             >
               <Input
-                placeholder="Enter your email"
+                placeholder={t('enter_your_email')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 style={{ border: "none", borderRadius: 0,padding:"10px 5px" }}
               />
               <Button onClick={handleSubscribe} style={{ backgroundColor: "#174143", color: "#fff",padding: 20 }}>
-                Subscribe
+                {t('subscribe')}
               </Button>
             </Flex>
           </Flex>
@@ -64,7 +74,7 @@ function FooterComponent() {
             <Flex vertical align="center" style={{ flex:1 ,backgroundColor: "transparent",
               borderLeft:"2px solid #FFF6F6"
             }}>
-              <h3 style={{fontWeight:600 ,color:'white'}}>Explore</h3>
+              <h3 style={{fontWeight:600 ,color:'white'}}>{t('explore')}</h3>
               <Menu
                 className="footer-menu-item"
                 mode="vertical"
@@ -78,19 +88,19 @@ function FooterComponent() {
                   padding:'0px 10px'
                 }}
                 items={[
-                  { key: "about", label: <a href="#about">About Us</a> },
-                  { key: "services", label: <a href="#services">Services</a> },
-                  { key: "projects", label: <a href="#project">Projects</a> },
-                  { key: "blog", label: <a href="#blog">Blog</a> },
-                  { key: "contact", label: <a href="#contact">Contact</a> },
+                  { key: "about", label: <a href="#about">{t("about_us")}</a> },
+                  { key: "services", label: <a href="#services">{t("service")}</a> },
+                  { key: "projects", label: <a href="#project">{t("project")}</a> },
+                  { key: "blog", label: <a href="#blog">{t("blog")}</a> },
+                  { key: "contact", label: <a href="#contact">{t("contact")}</a> },
                 ]}
               />
             </Flex>
             <Flex className="contact-info" vertical  align="flex-start" style={{ flex:2 ,width: "100%" ,textAlign:'start',paddingLeft:10 }}>
-              <h3 style={{fontWeight:600 ,color:'white'}}>Contact Info</h3>
-              <p style={{padding:"5px 0px" }}>Address:<span> 5601 Chalkville Road Center Point AL 35215</span></p>
-              <p style={{padding:"5px 0px" }}>Email:<span> info@example.com</span></p>
-              <p style={{padding:"5px 0px" }}>Phone:<span> +1 234 567 890</span></p>
+              <h3 style={{fontWeight:600 ,color:'white'}}>{t('contact_info')}</h3>
+              <p style={{padding:"5px 0px" }}>{t("address")}:<span> {currentLang === "km" ? addressData.address_kh : addressData.address}</span></p>
+              <p style={{padding:"5px 0px" }}>{t("email")}:<span> info@example.com</span></p>
+              <p style={{padding:"5px 0px" }}>{t("phone")}:<span> +1 234 567 890</span></p>
               
 
               {/* Social Icons */}
@@ -127,7 +137,7 @@ function FooterComponent() {
         {/* Column 3 */}
         <Col xs={24} md={12} lg={8}>
           <Flex vertical align="flex-start" style={{ backgroundColor: "transparent" }}>
-            <h3 style={{fontWeight:600,paddingBottom:15 ,color:'white' }}>Our Gallery</h3>
+            <h3 style={{fontWeight:600,paddingBottom:15 ,color:'white' }}>{t("f_our_gallery")}</h3>
             <div style={{width:"100%", height:"60%"}}>
               <Row gutter={[16, 16]}>
                 {[

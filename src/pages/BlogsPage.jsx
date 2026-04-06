@@ -2,8 +2,12 @@ import { Col, Row, Flex } from "antd";
 import React from "react";
 import "../style/CardSliderBlog.css";
 import CardSliderBlog from "../components/ui/CardSliderBlog";
+import { useTranslation } from "react-i18next";
 
 function BlogsPage() {
+  const {t ,i18n } = useTranslation();
+  
+
   return (
     <Flex
       id="blog"
@@ -20,9 +24,9 @@ function BlogsPage() {
         <Row gutter={[0, 0]}>
           <Col span={24}>
             <h1 style={{deplay:'flex',textAlign:'center' ,fontSize: 14, fontWeight: "bold", marginBottom: 5 }}>
-              OUR BLOG
+              {t('our_blog')}
             </h1>
-            <h1 style={{ deplay:'flex',textAlign:'center'  ,margin: 0 }}>Latest News & Articles</h1>
+            <h1 style={{ deplay:'flex',textAlign:'center'  ,margin: 0 }}>{t('latest_news_and_articles')}</h1>
           </Col>
         </Row>
 

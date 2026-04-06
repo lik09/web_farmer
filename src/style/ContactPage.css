@@ -31,6 +31,14 @@
   overflow: hidden;
 }
 
+.carousel-wrapper .slick-slide {
+  padding: 0 15px; /* ផ្លាស់ប្តូរ 15px តាមចំនួនដែលចង់បាន */
+}
+
+.carousel-wrapper .slick-list {
+  margin: 0 -15px; /* ត្រូវតែដូចគ្នានឹង padding ខាងលើ */
+}
+
 .detail-slide {
   position: relative;
   width: 100%;
@@ -87,7 +95,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 10px;
+  gap: 20px;
   height: 100%;
 }
 

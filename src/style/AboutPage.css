@@ -115,7 +115,7 @@
    /* Experience box adjust */
   .experience{
    width: 150px;
-   padding: 25px 15px;
+   padding: 8px 10px;
     background-color: #174143;
     position: absolute;
     top:0;
@@ -126,13 +126,14 @@
 }
   .experience h1{
     font-size: 20px;
-    line-height: 0 !important;
-    padding-bottom: 5px;
+    line-height: 1 !important;
+    
   }
 
   .experience p{
     font-size: 12px;
-    line-height: 0 !important;
+    line-height: 1 !important;
+    padding-bottom: 12px !important;
   }
 
   /* Text below image */
@@ -160,7 +161,7 @@
      /* Experience box adjust */
   .experience{
     width: 100px;
-    padding: 18px 10px;
+    padding: 6px 10px !important;
     background-color: #174143 !important;
     position: absolute;
     top:0;
@@ -168,15 +169,17 @@
     color: #ffffff;
     z-index: 2;
     font-size: 14px;
-    }
+  }
+
   .experience h1{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
-    padding-bottom: 5px;
+   
   }
 
   .experience p{
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1;
+    padding-bottom: 12px !important;
   }
 }

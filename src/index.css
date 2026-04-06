@@ -10,3 +10,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+@media (max-width: 768px) {
+  .title-side{
+    font-size: 35px !important;
+    line-height: 1.5 !important;
+  }
+}
